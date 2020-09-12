@@ -1,0 +1,20 @@
+server:
+  port: 9093
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:5003/meru
+      database: meru
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+
+springdoc:
+  packagesToScan: com.wipro.ms.b12.implstage.customerservices
